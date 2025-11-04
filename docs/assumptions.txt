@@ -1,1 +1,8 @@
-
+1. I assumed the randomly generated dataset (with its specific distributions and parameters for income, age, loan amount, etc.) accurately represents the real-world customer population.
+2. I assumed the target class imbalance of 80% repaid vs. 20% not repaid is the correct distribution I should model.
+3. I assumed that using Logistic Regression would be effective, implying I believed a linear relationship exists between the features and the outcome's log-odds.
+4. I assumed scaling the numerical features with StandardScaler was the necessary and correct step to ensure that models like KNeighborsClassifier weren't biased by feature magnitude.
+5. I assumed the engineered features like Debt-to-Income Ratio and the Loan-to-Outstanding Ratio would provide meaningful predictive power to the models.
+6. I assumed the thresholds I chose (e.g., Days Past Due > 30 AND Credit Score < 500) were the correct business rules for defining a 'High_Risk_Customer' flag.
+7. I assumed under-sampling (RandomUnderSampler) was the optimal technique to address the class imbalance and improve the model's ability to predict the non-repaying class.
+8. I assumed the seven IF-THEN rules in my recommendation engine (based on features like complaint flag, age, and response rate) are the best possible contact strategies to drive collections.
